@@ -1,0 +1,119 @@
+* {
+  font-family: 'Caveat', cursive;
+}
+body {
+  background-image: url('paper.jpg');
+  background-size: cover;          
+  background-repeat: no-repeat;
+  background-attachment: fixed;    
+}
+
+.to-do-app > h1{
+    text-align: center; 
+    color: rgb(12, 12, 105);
+    text-decoration: underline;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+#datee{
+    color: rgb(7, 7, 130);
+    text-align: center;
+}
+
+#searchbar{
+    width: 350px;
+    height: 30px;
+    border: 0.5px solid rgba(173, 167, 167, 0.605);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    opacity: 50%;
+}
+
+#plus{
+    font-size: 1rem;
+    width: 35px;
+    height: 30px;
+    border-radius: 0.5rem;
+    border: 0.5px solid rgba(173, 167, 167, 0.605);
+    background: transparent;
+}
+
+#todolist{
+    font-size: 1.2 rem;
+    color: rgb(22, 22, 120);
+    opacity: 60%;
+    font-weight: lighter;
+    padding-bottom: 0;
+}
+
+input[type="checkbox"] {
+  appearance: none;              
+  width: 33px;
+  height: 20px;
+  border: 1.2px solid #2c3e6b;
+  border-radius: 5px;
+  cursor: pointer;
+  vertical-align: middle;
+  opacity: 30%;
+}
+
+input[type="checkbox"]:checked {
+  background: #2c3e6b;
+  background-image: url("data:image/svg+xml,...");
+}
+
+.todo-text{
+    color: rgb(22, 22, 120);
+}
+
+#total{
+    color: rgb(22, 22, 120);
+    opacity: 60%;
+    text-align: center;
+    font-size: 1.4rem;  
+}
+
+#notepad {
+  width: 100%;
+  min-height: 100px;
+  border: none;
+  background: transparent;
+  font-family: 'Caveat', cursive;    
+  font-size: 1.2rem;
+  color:rgb(22, 22, 120);
+  resize: vertical;                  
+  outline: none;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #d4a0a0;
+  cursor: pointer;
+  opacity: 0;                    
+  transition: opacity 0.2s;
+  margin-left: auto;             
+}
+
+.delete-btn:hover {
+  color: #c06060;               
+}
+
+.todo-item:hover .delete-btn {
+  opacity: 1;                    
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
